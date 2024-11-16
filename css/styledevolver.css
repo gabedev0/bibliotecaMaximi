@@ -1,0 +1,144 @@
+/* Resetando margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo principal do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6fa;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Container para a página inteira */
+.container {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+}
+
+/* Sidebar (menu de navegação lateral) */
+.sidebar {
+    background-color: #7dc6f2;
+    width: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    text-align: center;
+}
+
+.sidebar .logo img {
+    width: 120px;
+    height: 100%;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 15px 0;
+}
+
+.nav-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #eaf4ff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #e0e7ef;
+    color: #1a73e8;
+}
+
+/* Área principal (conteúdo central) */
+.main-content {
+    flex: 1;
+    background-color: #e3f2fd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centralizando o título */
+.header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a área de dados */
+.data-area {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para a lista de empréstimos com rolagem */
+.loan-list {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+    max-height: 400px; /* Define o tamanho máximo da área com a lista */
+    overflow-y: auto; /* Habilita a rolagem vertical quando necessário */
+}
+
+/* Estilo para cada item de empréstimo */
+.loan-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.loan-item p {
+    margin: 5px 0;
+}
+
+.devolver-btn {
+    background-color: #7dc6f2;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.devolver-btn:hover {
+    background-color: #63b1e8;
+}
+
+/* Seções */
+#consultar, #adicionar, #emprestar, #devolver, #historico {
+    display: none;
+}
+
+#consultar:target, #adicionar:target, #emprestar:target, #devolver:target, #historico:target {
+    display: block;
+}
