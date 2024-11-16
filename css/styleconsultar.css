@@ -28,7 +28,6 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 /* Logo dentro da sidebar */
 .sidebar .logo {
