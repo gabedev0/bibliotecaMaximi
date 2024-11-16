@@ -100,44 +100,45 @@ body {
     margin-bottom: 30px;
 }
 
-/* Estilo para o formulário de adicionar livro */
-.add-book-form {
+/* Estilo para a tabela de histórico com rolagem */
+.historico-scroll {
+    max-height: 400px; /* Define a altura máxima da área com rolagem */
+    overflow-y: auto;  /* Adiciona rolagem vertical quando necessário */
+    margin-top: 20px;
+}
+
+.historico-tabela {
+    width: 100%;
+    border-collapse: collapse;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    text-align: left;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.add-book-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.add-book-form input {
-    width: 100%;
+.historico-tabela th,
+.historico-tabela td {
     padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 5px;
     border: 1px solid #ddd;
-    font-size: 16px;
 }
 
-.add-book-form button {
+.historico-tabela th {
     background-color: #7dc6f2;
     color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
-    width: 100%;
-    transition: 0.3s;
+    text-align: center;
 }
 
-.add-book-form button:hover {
-    background-color: #63b1e8;
+.historico-tabela td {
+    font-size: 14px;
+    color: #333;
+}
+
+.historico-tabela tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.historico-tabela tr:hover {
+    background-color: #eaf4ff;
 }
 
 /* Seções */
