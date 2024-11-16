@@ -11,9 +11,7 @@ body {
     background-color: #e6e6fa;
     display: flex;
     justify-content: center;
-    padding: 0;
     height: 100vh;
-    overflow: hidden;
 }
 
 /* Container para a página inteira */
@@ -30,9 +28,9 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
+/* Logo dentro da sidebar */
 .sidebar .logo {
     text-align: center;
 }
@@ -42,6 +40,7 @@ body {
     height: auto;
 }
 
+/* Menu de navegação */
 .nav-menu ul {
     list-style-type: none;
     padding: 0;
@@ -60,8 +59,7 @@ body {
     border-radius: 5px;
     background-color: #eaf4ff;
     font-size: 14px;
-    transition: 0.3s;
-    cursor: pointer; /* Adicionado */
+    transition: background-color 0.3s;
 }
 
 .nav-menu a:hover {
@@ -76,12 +74,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    position: relative;
     justify-content: center;
     align-items: center;
 }
 
-/* Centralizando o título */
+/* Título principal */
 .header h1 {
     font-size: 48px;
     font-weight: bold;
@@ -121,13 +118,6 @@ body {
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 16px;
-    transition: 0.3s; /* Suavizar o foco */
-}
-
-.add-book-form input:focus,
-.add-book-form select:focus {
-    border-color: #7dc6f2;
-    outline: none;
 }
 
 .add-book-form button {
@@ -139,15 +129,11 @@ body {
     cursor: pointer;
     font-size: 16px;
     width: 100%;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .add-book-form button:hover {
     background-color: #63b1e8;
-}
-
-.add-book-form button:active {
-    background-color: #4d9ce6;
 }
 
 /* Responsividade */

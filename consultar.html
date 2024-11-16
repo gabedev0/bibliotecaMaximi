@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definindo a codificação de caracteres e o título da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultar Livros</title>
+    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="css/styleconsultar.css">
 </head>
 <body>
+    <!-- Container principal para a estrutura da página -->
     <div class="container">
+        <!-- Menu lateral (sidebar) com logo e navegação -->
         <aside class="sidebar">
+            <!-- Logo da biblioteca -->
             <div class="logo">
                 <img src="imgs/logo_icon.png" alt="Logo da Biblioteca">
             </div>
+            <!-- Logo da ETE -->
             <div class="logo">
                 <img src="imgs/ete_logo.png" alt="Logo do ETE">
             </div>
+            <!-- Menu de navegação -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -26,38 +33,45 @@
             </nav>
         </aside>
 
+        <!-- Conteúdo principal da página -->
         <main class="main-content">
+            <!-- Cabeçalho com título -->
             <header class="header">
                 <h1>Consultar Livros</h1>
             </header>
+
+            <!-- Área de pesquisa -->
             <div class="search-area">
+                <!-- Formulário de pesquisa -->
                 <form id="search-form">
+                    <!-- Rótulo e campo de pesquisa -->
                     <label for="search">Pesquisar Livro:</label>
                     <input type="text" id="search" placeholder="Digite o nome do livro">
                     <button type="submit">Pesquisar</button>
                 </form>
+                
+                <!-- Lista de livros disponíveis -->
                 <ul id="book-list">
-                    <li>Dom Casmurro (Machado de Assis) - |74545| Disponivel</li>
-                    <li>O Cortiço (Aluísio Azevedo) - |75345| Disponivel</li>
-                    <li>Veredas (Guimarães Rosa) - |74735| Disponivel</li>
-                    <li>O Guarani (José de Alencar) - |74915| Disponivel</li>
-                    <li>Navalha na Carne (Plínio Marcos) - |74500| Disponivel</li>
-                    <li>Sermões (Padre Antônio Vieira) - |74515| Disponivel</li>
-                    <li>Inocência (Visconde de Taunay) - |74145| Disponivel</li>
-                    <li>Reinações de Narizinho (Monteiro Lobato) - |74745| Disponivel</li>
-                    <li>Dom Quixote (Miguel de Cervantes) - |74145| Disponivel</li>
-                    <li>O Senhor dos Anéis (J.R.R. Tolkien) - |72545| Disponivel</li>
-                    <li>Cem Anos de Solidão (Gabriel García) - |74265| Disponivel</li>
-                    <li>O Pequeno Príncipe (Antoine de Saint) - |80545| Disponivel</li>
-                    <li>A Metamorfose (Franz Kafka) - |74265| Disponivel</li>
-                    <li>Os Miseráveis (Victor Hugo) - |74725| Disponivel</li>
-                    <li>Frankenstein (Mary Shelley) - |78545| Disponivel</li>
-                    <li>Drácula (Bram Stoker) - |74545| Disponivel</li>
-                    <li>A Divina Comédia (Dante Alighieri) - |74005| Disponivel</li>
-                    <li>Orgulho e Preconceito (Jane Austen) - |72645| Disponivel</li>
-                    <li>A Guerra dos Tronos (George R.R. Martin) - |69545| Disponivel</li>
-                    <li>1984 (George Orwell) - |60545| Disponivel</li>
-                    
+                    <li>Dom Casmurro (Machado de Assis) - |74545| Disponível</li>
+                    <li>O Cortiço (Aluísio Azevedo) - |75345| Disponível</li>
+                    <li>Veredas (Guimarães Rosa) - |74735| Disponível</li>
+                    <li>O Guarani (José de Alencar) - |74915| Disponível</li>
+                    <li>Navalha na Carne (Plínio Marcos) - |74500| Disponível</li>
+                    <li>Sermões (Padre Antônio Vieira) - |74515| Disponível</li>
+                    <li>Inocência (Visconde de Taunay) - |74145| Disponível</li>
+                    <li>Reinações de Narizinho (Monteiro Lobato) - |74745| Disponível</li>
+                    <li>Dom Quixote (Miguel de Cervantes) - |74145| Disponível</li>
+                    <li>O Senhor dos Anéis (J.R.R. Tolkien) - |72545| Disponível</li>
+                    <li>Cem Anos de Solidão (Gabriel García) - |74265| Disponível</li>
+                    <li>O Pequeno Príncipe (Antoine de Saint) - |80545| Disponível</li>
+                    <li>A Metamorfose (Franz Kafka) - |74265| Disponível</li>
+                    <li>Os Miseráveis (Victor Hugo) - |74725| Disponível</li>
+                    <li>Frankenstein (Mary Shelley) - |78545| Disponível</li>
+                    <li>Drácula (Bram Stoker) - |74545| Disponível</li>
+                    <li>A Divina Comédia (Dante Alighieri) - |74005| Disponível</li>
+                    <li>Orgulho e Preconceito (Jane Austen) - |72645| Disponível</li>
+                    <li>A Guerra dos Tronos (George R.R. Martin) - |69545| Disponível</li>
+                    <li>1984 (George Orwell) - |60545| Disponível</li>
                 </ul>
             </div>
             
@@ -65,4 +79,3 @@
     </div>
 </body>
 </html>
- 

@@ -11,7 +11,6 @@ body {
     background-color: #e6e6fa;
     display: flex;
     justify-content: center;
-    padding: 0;
 }
 
 /* Container para a página inteira */
@@ -21,25 +20,23 @@ body {
     height: 90vh;
 }
 
-/* Sidebar (menu de navegação lateral) */
 .sidebar {
     background-color: #7dc6f2;
     width: 220px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-
+/* Logo dentro da sidebar */
 .sidebar .logo {
     text-align: center;
 }
-
 .sidebar .logo img {
     width: 120px;
-    height: 100%;
+    height: auto;
 }
 
+/* Menu de navegação */
 .nav-menu ul {
     list-style-type: none;
     padding: 0;
@@ -73,12 +70,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    position: relative;
     justify-content: center;
     align-items: center;
 }
 
-/* Centralizando o título */
+/* Título da página */
 .header h1 {
     font-size: 48px;
     font-weight: bold;
@@ -86,7 +82,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilo para a área de dados */
+/* Área de dados */
 .data-area {
     text-align: center;
     font-size: 18px;
@@ -95,14 +91,13 @@ body {
     margin: 0 auto;
 }
 
-/* Estilo para a lista de empréstimos com rolagem */
+/* Lista de empréstimos com rolagem */
 .loan-list {
     margin-top: 20px;
     text-align: left;
     max-width: 600px;
-    width: 100%;
-    max-height: 400px; /* Define o tamanho máximo da área com a lista */
-    overflow-y: auto; /* Habilita a rolagem vertical quando necessário */
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 /* Estilo para cada item de empréstimo */
@@ -118,6 +113,7 @@ body {
     margin: 5px 0;
 }
 
+/* Botão para devolver o livro */
 .devolver-btn {
     background-color: #7dc6f2;
     color: #fff;
@@ -132,13 +128,4 @@ body {
 
 .devolver-btn:hover {
     background-color: #63b1e8;
-}
-
-/* Seções */
-#consultar, #adicionar, #emprestar, #devolver, #historico {
-    display: none;
-}
-
-#consultar:target, #adicionar:target, #emprestar:target, #devolver:target, #historico:target {
-    display: block;
 }

@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definindo a codificação e a viewport para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Livros</title>
+    <!-- Link para o arquivo de estilo -->
     <link rel="stylesheet" href="css/styleadicionar.css">
 </head>
 <body>
+    <!-- Contêiner principal para o layout -->
     <div class="container">
+        <!-- Barra lateral (menu de navegação) -->
         <aside class="sidebar">
+            <!-- Logo da biblioteca -->
             <div class="logo">
                 <img src="imgs/logo_icon.png" alt="Logo da Biblioteca">
             </div>
+            <!-- Logo da instituição (ETE) -->
             <div class="logo">
                 <img src="imgs/ete_logo.png" alt="Logo do ETE">
             </div>
+            <!-- Menu de navegação -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -26,18 +33,24 @@
             </nav>
         </aside>
 
+        <!-- Conteúdo principal da página -->
         <main class="main-content">
+            <!-- Cabeçalho da página -->
             <header class="header">
                 <h1>Adicionar Livros</h1>
             </header>
+            <!-- Área de dados e formulário -->
             <div class="data-area">
                 <form action="#" class="add-book-form">
+                    <!-- Campo para o nome do livro -->
                     <label for="nome-livro">Nome do livro</label>
                     <input type="text" id="nome-livro" name="nome-livro" required>
                     
+                    <!-- Campo para o código do livro -->
                     <label for="codigo-livro">Código do livro</label>
                     <input type="text" id="codigo-livro" name="codigo-livro" required>
 
+                    <!-- Botão para adicionar o livro -->
                     <button type="submit">Adicionar Livro</button>
                 </form>
             </div>

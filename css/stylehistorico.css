@@ -5,147 +5,151 @@
     box-sizing: border-box;
 }
 
-/* Estilo principal do corpo da página */
+/* Estilo geral do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e6e6fa;
+    font-family: Arial, sans-serif;  /* Define a fonte da página */
+    background-color: #e6e6fa;  /* Cor de fundo suave */
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* Centraliza o conteúdo na tela */
     padding: 0;
 }
 
-/* Container para a página inteira */
+/* Container principal para a página inteira */
 .container {
     display: flex;
-    width: 90vw;
-    height: 90vh;
+    width: 90vw;  /* Largura da página em relação à tela */
+    height: 90vh;  /* Altura da página em relação à tela */
 }
 
-/* Sidebar (menu de navegação lateral) */
 .sidebar {
     background-color: #7dc6f2;
     width: 220px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
+/* Logo dentro da sidebar */
 .sidebar .logo {
     text-align: center;
 }
 
+/* Estilo das imagens das logos */
 .sidebar .logo img {
-    width: 120px;
-    height: 100%;
+    width: 120px;  /* Tamanho fixo das logos */
+    height: auto;  /* Altura proporcional à largura */
 }
 
+/* Menu de navegação dentro da sidebar */
 .nav-menu ul {
-    list-style-type: none;
+    list-style-type: none;  /* Remove os pontos da lista */
     padding: 0;
 }
 
 .nav-menu ul li {
-    margin: 15px 0;
+    margin: 15px 0;  /* Espaçamento entre os itens do menu */
 }
 
+/* Estilo dos links do menu */
 .nav-menu a {
     display: block;
-    color: #333;
-    text-decoration: none;
+    color: #333;  /* Cor do texto */
+    text-decoration: none;  /* Remove o sublinhado */
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: #eaf4ff;
-    font-size: 14px;
-    transition: 0.3s;
+    background-color: #eaf4ff;  /* Cor de fundo do link */
+    font-size: 14px;  /* Tamanho da fonte */
+    transition: 0.3s;  /* Transição suave para hover */
 }
 
+/* Efeito hover para os links do menu */
 .nav-menu a:hover {
     background-color: #e0e7ef;
     color: #1a73e8;
 }
 
-/* Área principal (conteúdo central) */
+/* Área principal de conteúdo da página */
 .main-content {
     flex: 1;
-    background-color: #e3f2fd;
+    background-color: #e3f2fd;  /* Cor de fundo suave */
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  /* Disposição dos itens em coluna */
     padding: 20px;
-    position: relative;
     justify-content: center;
     align-items: center;
 }
 
-/* Centralizando o título */
+/* Estilo do título principal */
 .header h1 {
-    font-size: 48px;
+    font-size: 48px;  /* Tamanho grande do título */
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Estilo para a área de dados */
+/* Área de dados que contém a tabela */
 .data-area {
     text-align: center;
     font-size: 18px;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 800px;  /* Largura máxima da área de dados */
     margin: 0 auto;
 }
 
-/* Estilo para as seções */
-.data-area section {
-    margin-bottom: 30px;
-}
-
-/* Estilo para a tabela de histórico com rolagem */
+/* Estilo para a tabela de histórico */
 .historico-scroll {
-    max-height: 400px; /* Define a altura máxima da área com rolagem */
+    max-height: 400px;  /* Altura máxima da área com rolagem */
     overflow-y: auto;  /* Adiciona rolagem vertical quando necessário */
     margin-top: 20px;
 }
 
+/* Estilo da tabela de histórico */
 .historico-tabela {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;  /* Remove os espaços entre as células */
     background-color: #fff;
     text-align: left;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave nas bordas */
 }
 
+/* Estilo das células da tabela (tanto cabeçalhos quanto dados) */
 .historico-tabela th,
 .historico-tabela td {
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd;  /* Bordas suaves */
 }
 
+/* Estilo do cabeçalho da tabela */
 .historico-tabela th {
-    background-color: #7dc6f2;
-    color: #fff;
+    background-color: #7dc6f2;  /* Cor de fundo do cabeçalho */
+    color: #fff;  /* Cor do texto do cabeçalho */
     font-size: 16px;
     text-align: center;
 }
 
+/* Estilo das células de dados */
 .historico-tabela td {
     font-size: 14px;
     color: #333;
 }
 
+/* Estilo para as linhas alternadas da tabela */
 .historico-tabela tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9;  /* Cor de fundo para linhas pares */
 }
 
+/* Efeito de hover nas linhas da tabela */
 .historico-tabela tr:hover {
     background-color: #eaf4ff;
 }
 
-/* Seções */
+/* Esconde as seções quando não são necessárias */
 #consultar, #adicionar, #emprestar, #devolver, #historico {
     display: none;
 }
 
+/* Exibe a seção que está sendo referenciada com o "target" */
 #consultar:target, #adicionar:target, #emprestar:target, #devolver:target, #historico:target {
     display: block;
 }

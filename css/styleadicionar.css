@@ -28,7 +28,6 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .sidebar .logo {
@@ -37,9 +36,10 @@ body {
 
 .sidebar .logo img {
     width: 120px;
-    height: 100%;
+    height: auto;
 }
 
+/* Estilo do menu de navegação */
 .nav-menu ul {
     list-style-type: none;
     padding: 0;
@@ -78,7 +78,7 @@ body {
     align-items: center;
 }
 
-/* Centralizando o título */
+/* Título centralizado */
 .header h1 {
     font-size: 48px;
     font-weight: bold;
@@ -90,14 +90,8 @@ body {
 .data-area {
     text-align: center;
     font-size: 18px;
-    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-}
-
-/* Estilo para as seções */
-.data-area section {
-    margin-bottom: 30px;
 }
 
 /* Estilo para o formulário de adicionar livro */
@@ -138,13 +132,4 @@ body {
 
 .add-book-form button:hover {
     background-color: #63b1e8;
-}
-
-/* Seções */
-#consultar, #adicionar, #emprestar, #devolver, #historico {
-    display: none;
-}
-
-#consultar:target, #adicionar:target, #emprestar:target, #devolver:target, #historico:target {
-    display: block;
 }

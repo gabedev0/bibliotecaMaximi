@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Metadados e título da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emprestar Livros</title>
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="css/styleemprestar.css">
 </head>
 <body>
+    <!-- Container principal da página -->
     <div class="container">
+        <!-- Menu lateral (Sidebar) -->
         <aside class="sidebar">
+            <!-- Logotipo da biblioteca -->
             <div class="logo">
                 <img src="imgs/logo_icon.png" alt="Logo da Biblioteca">
             </div>
+            <!-- Logotipo da instituição (ETE) -->
             <div class="logo">
                 <img src="imgs/ete_logo.png" alt="Logo do ETE">
             </div>
+            <!-- Menu de navegação -->
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -26,22 +33,33 @@
             </nav>
         </aside>
 
+        <!-- Conteúdo principal da página -->
         <main class="main-content">
+            <!-- Cabeçalho da página -->
             <header class="header">
                 <h1>Emprestar Livros</h1>
             </header>
+            <!-- Formulário para empréstimo de livros -->
             <div class="data-area">
                 <form action="#" class="add-book-form">
+                    <!-- Campo para nome do aluno -->
                     <label for="nome-aluno">Nome do Aluno</label>
                     <input type="text" id="nome-aluno" name="nome-aluno" required>
-                    
+
+                    <!-- Campo para selecionar o livro -->
                     <label for="nome-livro">Livro</label>
                     <select id="nome-livro" name="nome-livro" required>
+                        <!-- Exemplos de opções (a ser preenchido dinamicamente) -->
+                        <option value="livro1">Livro 1</option>
+                        <option value="livro2">Livro 2</option>
+                    </select>
 
+                    <!-- Campo para data do empréstimo -->
                     <label for="data-emprestimo">Data do Emprestimo</label>
                     <input type="date" id="data-emprestimo" name="data-emprestimo" required>
 
-                    <button type="submit">Adicionar Livro</button>
+                    <!-- Botão de envio do formulário -->
+                    <button type="submit">Emprestar Livro</button>
                 </form>
             </div>
         </main>
