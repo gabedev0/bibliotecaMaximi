@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emprestar Livros</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleemprestar.css">
 </head>
 <body>
     <div class="container">
@@ -31,8 +31,18 @@
                 <h1>Emprestar Livros</h1>
             </header>
             <div class="data-area">
-                <p>Aqui você pode registrar o empréstimo de livros.</p>
-                <!-- Adicione a funcionalidade de empréstimo aqui -->
+                <form action="#" class="add-book-form">
+                    <label for="nome-aluno">Nome do Aluno</label>
+                    <input type="text" id="nome-aluno" name="nome-aluno" required>
+                    
+                    <label for="nome-livro">Livro</label>
+                    <select id="nome-livro" name="nome-livro" required>
+
+                    <label for="data-emprestimo">Data do Emprestimo</label>
+                    <input type="date" id="data-emprestimo" name="data-emprestimo" required>
+
+                    <button type="submit">Adicionar Livro</button>
+                </form>
             </div>
         </main>
     </div>
