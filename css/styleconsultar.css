@@ -34,12 +34,9 @@ body {
 .sidebar .logo {
     text-align: center;
 }
-.sidebar {
-    background-color: #7dc6f2;
-    width: 220px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+.sidebar .logo img {
+    width: 120px;
+    height: auto;
 }
 
 /* Estilo para os links do menu */
